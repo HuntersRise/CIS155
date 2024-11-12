@@ -1,157 +1,205 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    color: #D2691E; /* Rusted orange */
+    background-color: #1E1B1A; /* Deep charcoal */
+  }
+  
+  header {
+    padding: 20px;
+    background-color: rgba(30, 27, 26, 0.9); /* Semi-transparent overlay */
+  }
+  
+  .banner {
+    position: relative;
+    width: 100%;
+    max-height: 800px;
+  }
+  
+  .banner-image {
+    width: 100%;
+    height: auto;
+    max-height: 800px;
+    object-fit: cover;
+  }
+  
+  .info-image {
+    display: block;
+    margin: 0 auto;
+  }
 
-body {
-  font-family: Arial, sans-serif;
-  color: #D2691E; /* Rusted orange */
-  background-color: #1E1B1A; /* Deep charcoal */
-}
-
-header {
-  padding: 20px;
-  background-color: rgba(30, 27, 26, 0.9); /* Semi-transparent overlay */
-}
-
-.banner {
-  position: relative;
-  width: 100%;
-  max-height: 800px; /* Ensures the banner doesn’t become too large */
-}
-
-.banner-image {
-  width: 100%;
-  height: auto;
-  max-height: 800px;
-  object-fit: cover;
-}
-
-.logo {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 80%; /* Adjust this percentage for the desired size relative to the banner */
-}
-
-.transparent-logo {
-  width: 50%;
-  height: auto;
-}
-
-nav {
-  display: flex;
-  justify-content: center;
-  padding-top: 10px;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-}
-
-nav ul li a {
-  color: #D2691E;
-  text-decoration: none;
-  font-size: 18px;
-  transition: color 0.3s;
-}
-
-nav ul li a:hover {
-  color: #FFA500; /* Brighter orange */
-}
-
-/* Container styling */
-.list-container {
-  max-width: 800px;  /* Adjust as needed for the layout */
-  margin: 0 auto;    /* Centers the container */
-  padding: 20px;
-  border: 1px solid #333; /* Optional: adds a border around the list */
-  border-radius: 5px;
-  background-color: #1a1a1a; /* Optional: adds background contrast */
-}
-
-/* Shared container styling for #more-info and #showrunner-info */
-#more-info,
-#showrunner-info {
-  max-width: 800px;  /* Adjust as needed for the layout */
-  margin: 20px auto; /* Centers the container */
-  padding: 20px;
-  border: 1px solid #333; /* Optional: adds a border around the container */
-  border-radius: 5px;
-  background-color: #1a1a1a; /* Optional: adds background contrast */
-  color:#f5f5f5;
-}
-
-#more-info ul,
-#showrunner-info ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-#more-info ul li,
-#showrunner-info ul li {
-  margin: 10px 0;
-  color: #f5f5f5; /* Text color for better readability */
-}
-
-/* Welcome title styling */
-h1 {
-  font-size: 2.5em;        /* Large font size for a striking title */
-  color: #ffae42;          /* Rusted orange color */
-  margin-top: 20px;
-  text-align: center;
-}
-
-/* Subtitle styling */
-.intro-text {
-  font-size: 1.2em;        /* Slightly larger font for emphasis */
-  color: #d3d3d3;          /* Light gray for softer contrast */
-  text-align: center;
-  margin: 10px 0;
-}
-
-.info-link {
-  text-align: center;
-}
-
-/* Styling for the 'Learn more' link */
-.learn-more-link {
-  display: inline-block;
-  margin: 20px auto;
-  padding: 10px 20px;
-  font-size: 1em;
-  color: #ffae42;
-  background-color: #333;
-  text-decoration: none;
-  border-radius: 5px;
-  text-align: center;
-}
-
-h2 {
-  text-align: center; /* Centers the heading */
-}
-
-.learn-more-link:hover {
-  background-color: #ffae42;
-  color: #333;
-}
-
-/* Subtitle for "Why You Should Watch Andor" */
-#more-info h2,
-#showrunner-info h2 {
-  font-size: 1.8em;
-  color: #ffae42;
-  margin-top: 30px;
-  text-align: center;
-}
-
-/* Styling for the showrunner description */
-.showrunner-description {
-  font-size: 1.1em;
-  line-height: 1.6;
-}
+  .transparent-logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    max-width: 150px;
+    opacity: 0.8;
+  }
+  
+  .logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+    background: #333;
+  }
+  
+  nav ul li a {
+    color: #D2691E;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+  }
+  
+  nav ul li a:hover {
+    color: #FFA500; /* Brighter orange */
+  }
+  
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  h1 {
+    font-size: 2.5em;
+    color: #ffae42;
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .intro-text {
+    font-size: 1.2em;
+    color: #d3d3d3;
+    text-align: center;
+    margin: 10px 0;
+  }
+  
+  .info-link {
+    text-align: center;
+  }
+  
+  .learn-more-link {
+    display: inline-block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #ffae42;
+    background-color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .learn-more-link:hover {
+    background-color: #ffae42;
+    color: #333;
+  }
+  
+  .list-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: #1a1a1a;
+  }
+  
+  #more-info, #showrunner-info {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: #1a1a1a;
+    color: #ffffff;
+  }
+  
+  #more-info ul, #showrunner-info ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #more-info ul li, #showrunner-info ul li {
+    margin: 10px 0;
+    color: #f5f5f5;
+  }
+  
+  #more-info h2, #showrunner-info h2 {
+    font-size: 1.8em;
+    color: #ffae42;
+    margin-top: 30px;
+    text-align: center;
+  }
+  
+  .character-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+    color: #e0e0e0;
+    margin-bottom: 20px;
+  }
+  
+  .text-image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .character-image {
+    max-width: 300px;
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(226, 226, 226, 0.2);
+  }
+  
+  .text-content {
+    max-width: 600px;
+  }
+  
+  .text-content h2 {
+    color: #e9e9e9;
+    font-size: 1.8rem;
+  }
+  
+  .text-content p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  .showrunner-description {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #f5f5f5;
+  }
+  
+  
