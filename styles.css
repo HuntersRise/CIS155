@@ -21,6 +21,27 @@
     max-height: 800px;
   }
   
+  /* Flex container for the navigation menu */
+  nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    padding: 10px;
+    background-color: #222;
+  }
+
+  nav a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+  }
+
+  nav a:hover {
+    background-color: #555;
+    border-radius: 5px;
+  }
+
   .banner-image {
     width: 100%;
     height: auto;

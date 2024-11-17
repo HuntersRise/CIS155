@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Andor Fan Site - Home</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* General Styles */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    h1, h2 {
+      color: #111;
+    }
+
+    /* Flex container for the navigation menu */
+    nav ul {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      list-style: none;
+      padding: 10px;
+      background-color: #222;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #fff;
+      padding: 10px 20px;
+    }
+
+    nav a:hover {
+      background-color: #555;
+      border-radius: 5px;
+    }
+
+    /* Flexbox layout for text-image sections */
+    .text-image-container {
+      display: flex;
+      gap: 20px;
+      margin: 20px 0;
+      align-items: center;
+    }
+
+    .text-image-container img {
+      max-width: 40%;
+      border-radius: 8px;
+    }
+
+    .text-content {
+      flex: 1;
+    }
+
+    /* Grid layout for themes */
+    .grid-layout {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin: 20px;
+    }
+
+    .grid-layout div {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Full-height content section */
+    .full-height {
+      min-height: 100vh;
+    }
+
+    /* Responsive Adjustments */
+    @media (max-width: 768px) {
+      .text-image-container {
+        flex-direction: column;
+      }
+
+      .text-image-container img {
+        max-width: 100%;
+      }
+    }
+
+    @media (max-width: 360px) {
+      nav ul {
+        flex-direction: column;
+      }
+
+      nav a {
+        padding: 8px 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="banner">
+      <img src="images/banner.jpg" alt="Andor Banner" width="100%" style="max-height: 800px;" class="banner-image">
+      <div class="logo">
+        <img src="images/logo.png" alt="Logo" class="transparent-logo">
+      </div>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="characters.html">Characters</a></li>
+        <li><a href="episodes.html">Episodes</a></li>
+        <li><a href="https://starwars.com" target="_blank">Star Wars Official</a></li> <!-- External link -->
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <h1>Welcome to the Andor Fan Site</h1>
+      <p class="intro-text">Explore the world of <em>Star Wars: Andor</em>.</p>
+      <div class="info-link">
+        <a href="#showrunner-info" class="learn-more-link">Learn More About The Show Runner</a>
+      </div>
+      <section class="character-section">
+        <h1 class="section-title">Why You Should Watch Andor</h1>
+        <h1 class="section-title">-------------------</h1>
+        <div class="text-image-container">
+          <img src="images/andor-character.jpg" alt="Cassian Andor" class="character-image">
+          <div class="text-content">
+            <h2>Welcome to the Andor Era</h2>
+            <p>With the release of Andor, Star Wars has entered a new chapter...</p>
+          </div>
+        </div>
+        <!-- Additional text-image sections unchanged -->
+      </section>
+    </section>
+    <section id="themes" class="grid-layout full-height">
+      <h2>Exploring Themes in Andor</h2>
+      <div>
+        <h3>Theme: Radicalization</h3>
+        <p>Cassian's journey is an exploration of political awakening.</p>
+      </div>
+      <div>
+        <h3>Theme: Sacrifice</h3>
+        <p>The cost of rebellion is deeply explored.</p>
+      </div>
+      <div>
+        <h3>Theme: Oppression</h3>
+        <p>The Empire’s oppressive nature is a constant threat.</p>
+      </div>
+      <div>
+        <h3>Theme: Hope</h3>
+        <p>Moments of hope inspire the fight for freedom.</p>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
