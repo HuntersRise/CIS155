@@ -1,0 +1,17 @@
+From: Ella Strenge (She/Her)
+1. I think you should have some borders or spacing between each section in the navigation menu. It looks good either way, but I think your website would look even more polished by doing so.
+ - Added padding to the nav bar to move the items inside it further apart and changed the hover effect for a more polished look
+2.  When the screen size is smaller, all the titles on the main page and under, "Why You Should Watch Andor" are centered while just below it, the titles under, "About the Showrunner Tony Gilroy," are fixed to the left. You should try to make sure those are centered as well.
+ - Fixed this by changing the section classes
+3. When I minimize the size of the website, the Andor Text begins to cover up the navigation menu. Might want to adjust that
+ - This was a huge problem, it wasn't easy to solve either as the png isn't easily re-sized because of how I made it. I also don't know if it fits my original vision for the website anymore? I'll talk about it in class on Monday
+
+From: Virgil Beasley (He/Him)
+Complements:
+The very large poster art at the top of the screen works well, it draws the viewer into the site.
+Screen stills: Clean and high resolution, with highlights and shadowing is a window into the characters and episode emotion.
+I like the wide margins and the informational text beside the screen still, as I scroll, it has the feeling of a roll of film projecting onto a screen.  
+
+Recommendations:
+To be honest, the only item I came across that was not working how I thought it should be the “Learn More About the Show Runner” link.  I feel that if clicked, it should scroll past Why You Should Watch Andor and down to About the Showrunner Tony Gilroy.  Great Job!
+ - Yep that was entirely broken, I somehow missed adding the id tag back to the about the showrunner section of my website.
