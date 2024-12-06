@@ -10,15 +10,11 @@
 <body>
   <header>
     <div class="banner">
-      <!--I have removed the banner image from the following pages as you noted it might improve user experience on the website, please let me know what you think on Monday!-->
+      <!-- Banner Image -->
       <img src="images/banner.jpg" alt="Andor Banner" width="100%" style="max-height: 800px;" class="banner-image">
-      <!--<div class="logo">
-      <img src="images/logo.png" alt="Logo" class="transparent-logo"> This code isn't easily fixed with this website design, 
-      I think I would have to re-do it almost entirely, for that reason I'll be removing this code from the 
-      following pages and commenting it out here in case I think of a solution
-      </div>-->
     </div>
     <nav>
+      <!-- Navbar for website, duplicated on other pages -->
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="characters.html">Characters</a></li>
@@ -28,101 +24,111 @@
       </ul>
     </nav>
   </header>
+
   <main>
-    <section>
-      <h1>Welcome to the Andor Fan Site</h1>
-      <p class="intro-text">Explore the world of <em>Star Wars: Andor</em>.</p>
-      <div class="info-link">
-        <a href="#showrunner-info" class="learn-more-link">Learn More About The Show Runner</a>
-      </div>
-      <section class="character-section">
-        <h1 class="section-title">Why You Should Watch Andor</h1>
-        <h1 class="section-title">-------------------</h1>
-        <div class="text-image-container">
-          <img src="images/andor-character.jpg" alt="Cassian Andor" class="image-container">
-          <div class="text-content">
-            <h2>What I Will be Focusing On</h2>
-            <p>With the release of Andor Starwars projects under Tony Gilroy's influence have a bright new future. In this website I'll be focusing on the craftmanship that elevates this show to a new level of storytelling in the starwars universe after first discussing why the other shows did not bring satisfaction to fans and why Tony Gilroy's involvement means that Starwars may be entering a new age.</p>
-          </div>
+    <!-- In accordance with the suggestions I recieved from a classmate (Steph) I set upon modifying this with 
+    the basic style so I could use h1 for the grouping of my image containers without needing the class="section-title" -->
+    <h1 style="font-size: 2.5em; color: #ffae42; margin-top: 20px; text-align: center;">Welcome to the Andor Fan Site</h1>
+
+    <p class="intro-text">Explore the world of <em>Star Wars: Andor</em>.</p>
+
+    <!-- The recommendation to remove the info link class causes the text to lose it's alignment -->
+    <div class="info-link">
+      <a href="#showrunner-info" class="learn-more-link">Learn More About The Show Runner</a>
+    </div>
+
+      <h1>Why You Should Watch Andor</h1>
+      <h1>-------------------</h1>
+
+      <div class="text-image-container">
+        <img src="images/andor-character.jpg" alt="Cassian Andor" class="image-container">
+        <div class="text-content">
+          <h2>What I Will be Focusing On</h2>
+          <p>With the release of Andor Starwars projects under Tony Gilroy's influence have a bright new future. In this website I'll be focusing on the craftmanship that elevates this show to a new level of storytelling in the starwars universe after first discussing why the other shows did not bring satisfaction to fans and why Tony Gilroy's involvement means that Starwars may be entering a new age.</p>
         </div>
+      </div>
+
+      <div class="text-image-container">
+        <img src="images/franchise-exhaustion.jpg" alt="Franchise Exhaustion" class="image-container">
+        <div class="text-content">
+          <h2>Star Wars: The Franchise Exhaustion Era</h2>
+          <p>In recent years, some fans have felt overwhelmed by the volume of Star Wars content, often describing it as the "Franchise Exhaustion Era." This period saw a rapid expansion of stories, series, and movies, many of which leaned heavily on nostalgia and well-known characters. But now, Andor marks the beginning of something different. It shows a careful and thoughtful mind at work as every scene is beautifully done, and the character writing feels logical and real.</p>
+        </div>
+      </div>
+
+      <div class="text-image-container">
+        <img src="images/departure-fan-service.jpg" alt="Departure from Fan Service" class="image-container">
+        <div class="text-content">
+          <h2>A Departure from Fan Service</h2>
+          <p>Andor is refreshing in its use of fan service—or, more accurately, its lack thereof. While recent Star Wars shows often relied on cameos and callbacks, Andor emphasizes character-driven storytelling and new perspectives. It steers away from the cyclical nature of "self-referentiality" that has come to define many recent Star Wars entries (see the image on the left for an example from the recent boba fett show, two characters that realistically should never have crossed paths).</p>
+        </div>
+      </div>
+
+      <div class="text-image-container">
+        <img src="images/cinematic-quality.jpg" alt="Cinematic Quality" class="image-container">
+        <div class="text-content">
+          <h2>Craft and Cinematic Quality in Andor</h2>
+          <p>One of the standout features of Andor is its craftsmanship. Where recent Star Wars series often felt fake and broken, due to character writing and over-reliance on the volume (a new cinimatic tool created for The Mandalorian) Andor felt amazing and new, given that it did not use the volume even once in the 12 episodes of runtime.</p>
+        </div>
+      </div>
+
+    <h1>About The Showrunner Tony Gilroy</h1>
+    <h1>-------------------</h1>
   
-        <div class="text-image-container">
-          <img src="images/franchise-exhaustion.jpg" alt="Franchise Exhaustion" class="image-container">
-          <div class="text-content">
-            <h2>Star Wars: The Franchise Exhaustion Era</h2>
-            <p>In recent years, some fans have felt overwhelmed by the volume of Star Wars content, often describing it as the "Franchise Exhaustion Era." This period saw a rapid expansion of stories, series, and movies, many of which leaned heavily on nostalgia and well-known characters. But now, Andor marks the beginning of something different. It shows a careful and thoughtful mind at work as every scene is beautifully done, and the character writing feels logical and real.</p>
-          </div>
-        </div>
+    <div class="text-image-container" id="showrunner-info">
+      <img src="images/tony-gilroy.jpg" alt="Tony Gilroy Portrait" class="image-container">
+      <div class="text-content">
+        <h2>The Mastermind Behind Andor</h2>
+        <p>Tony Gilroy, the showrunner for <em>Andor</em>, is a renowned American screenwriter, director, and producer whose work is celebrated for its nuanced storytelling and complex characters. Known for his compelling narratives, Gilroy brings a unique vision to <em>Andor</em>, offering audiences a fresh perspective on the Star Wars universe through grounded, character-driven storytelling.</p>
+      </div>
+    </div>
   
-        <div class="text-image-container">
-          <img src="images/departure-fan-service.jpg" alt="Departure from Fan Service" class="image-container">
-          <div class="text-content">
-            <h2>A Departure from Fan Service</h2>
-            <p>Andor is refreshing in its use of fan service—or, more accurately, its lack thereof. While recent Star Wars shows often relied on cameos and callbacks, Andor emphasizes character-driven storytelling and new perspectives. It steers away from the cyclical nature of "self-referentiality" that has come to define many recent Star Wars entries (see the image on the left for an example from the recent boba fett show, two characters that realistically should never have crossed paths).</p>
-          </div>
-        </div>
+    <div class="text-image-container">
+      <img src="images/early-career.jpg" alt="Early Career" class="image-container">
+      <div class="text-content">
+        <h2>A Legacy of Storytelling</h2>
+        <p>Born in Manhattan in 1956, Gilroy’s storytelling roots run deep. Influenced by his father, Pulitzer Prize-winning playwright Frank D. Gilroy, and his brothers in the film industry, Tony’s career began with smaller writing projects before moving to major films. His early work, including <em>The Cutting Edge</em> and <em>Dolores Claiborne</em>, highlighted his gift for building suspenseful narratives.</p>
+      </div>
+    </div>
   
-        <div class="text-image-container">
-          <img src="images/cinematic-quality.jpg" alt="Cinematic Quality" class="image-container">
-          <div class="text-content">
-            <h2>Craft and Cinematic Quality in Andor</h2>
-            <p>One of the standout features of Andor is its craftsmanship. Where recent Star Wars series often felt fake and broken, due to character writing and over-reliance on the volume (a new cinimatic tool created for The Mandalorian) Andor felt amazing and new, given that it did not use the volume even once in the 12 episodes of runtime.</p>
-          </div>
-        </div>
+    <div class="text-image-container">
+      <img src="images/bourne-series.jpg" alt="The Bourne Series" class="image-container">
+      <div class="text-content">
+        <h2>Redefining the Spy Genre</h2>
+        <p>Gilroy’s work on the <em>Bourne</em> series cemented his status as a writer of high-stakes thrillers. His screenplay for <em>The Bourne Identity</em> (2002) and its sequels redefined spy films, blending action with depth, which became a blueprint for modern thrillers. Later, his work on <em>Michael Clayton</em> earned him multiple Oscar nominations.</p>
       </div>
-    </section>
-    <section class="character-section">
-      <h1 class="section-title">About The Showrunner Tony Gilroy</h1>
-      <h1 class="section-title">-------------------</h1>
-    
-      <div class="text-image-container" id="showrunner-info">
-        <img src="images/tony-gilroy.jpg" alt="Tony Gilroy Portrait" class="image-container">
-        <div class="text-content">
-          <h2>The Mastermind Behind Andor</h2>
-          <p>Tony Gilroy, the showrunner for <em>Andor</em>, is a renowned American screenwriter, director, and producer whose work is celebrated for its nuanced storytelling and complex characters. Known for his compelling narratives, Gilroy brings a unique vision to <em>Andor</em>, offering audiences a fresh perspective on the Star Wars universe through grounded, character-driven storytelling.</p>
-        </div>
+    </div>
+  
+    <div class="text-image-container">
+      <img src="images/rogue-one.jpg" alt="Rogue One" class="image-container">
+      <div class="text-content">
+        <h2>Shaping Star Wars' Darker Side</h2>
+        <p>In 2016, Gilroy was brought in to rework <em>Rogue One: A Star Wars Story</em>. His involvement brought a gritty realism that resonated with audiences, setting a new tone for Star Wars. His success with <em>Rogue One</em> led to his role as showrunner for <em>Andor</em>, where he deepens the psychological complexities of rebellion.</p>
+        <a href="https://x.com/CultureCrave/status/1860082888542425185" alt="Tony's Appreciation"><p>Appreciation for all of Gilroy's Star Wars projects is at an all time high at the moment, allowing him to tell the gripping stories he wants</p></a>
       </div>
-    
-      <div class="text-image-container">
-        <img src="images/early-career.jpg" alt="Early Career" class="image-container">
-        <div class="text-content">
-          <h2>A Legacy of Storytelling</h2>
-          <p>Born in Manhattan in 1956, Gilroy’s storytelling roots run deep. Influenced by his father, Pulitzer Prize-winning playwright Frank D. Gilroy, and his brothers in the film industry, Tony’s career began with smaller writing projects before moving to major films. His early work, including <em>The Cutting Edge</em> and <em>Dolores Claiborne</em>, highlighted his gift for building suspenseful narratives.</p>
-        </div>
+    </div>
+  
+    <div class="text-image-container">
+      <img src="images/andor-directing.jpg" alt="Directing Andor" class="image-container">
+      <div class="text-content">
+        <h2>Crafting a Unique Star Wars Vision</h2>
+        <p>While revolutionary, over-reliance on technology like the Volume can hinder immersion. <b>Andor’s</b> commitment to shooting on location and using practical sets, with CGI as enhancement, creates a grounded, breathtakingly authentic visual experience. When blending CGI and practical effects you can get this amazing quality, which requires an open mind and clear directive and narritive forsight.</p></div>
+    </div>
+  
+    <div class="text-image-container">
+      <img src="images/hollywood-legacy.jpg" alt="Hollywood Legacy" class="image-container">
+      <div class="text-content">
+        <h2>A Lasting Impact</h2>
+        <p>Beyond Star Wars, Tony Gilroy remains a respected Hollywood figure, known for thought-provoking and layered stories. His narritive and directive foresight is imparitive for the direction he gives to each of his shows and his steadfast approach to creating some of the best cinima to ever grace our screens.</p>
       </div>
-    
-      <div class="text-image-container">
-        <img src="images/bourne-series.jpg" alt="The Bourne Series" class="image-container">
-        <div class="text-content">
-          <h2>Redefining the Spy Genre</h2>
-          <p>Gilroy’s work on the <em>Bourne</em> series cemented his status as a writer of high-stakes thrillers. His screenplay for <em>The Bourne Identity</em> (2002) and its sequels redefined spy films, blending action with depth, which became a blueprint for modern thrillers. Later, his work on <em>Michael Clayton</em> earned him multiple Oscar nominations.</p>
-        </div>
-      </div>
-    
-      <div class="text-image-container">
-        <img src="images/rogue-one.jpg" alt="Rogue One" class="image-container">
-        <div class="text-content">
-          <h2>Shaping Star Wars' Darker Side</h2>
-          <p>In 2016, Gilroy was brought in to rework <em>Rogue One: A Star Wars Story</em>. His involvement brought a gritty realism that resonated with audiences, setting a new tone for Star Wars. His success with <em>Rogue One</em> led to his role as showrunner for <em>Andor</em>, where he deepens the psychological complexities of rebellion.</p>
-        </div>
-      </div>
-    
-      <div class="text-image-container">
-        <img src="images/andor-directing.jpg" alt="Directing Andor" class="image-container">
-        <div class="text-content">
-          <h2>Crafting a Unique Star Wars Vision</h2>
-          <p>While revolutionary, over-reliance on technology like the Volume can hinder immersion. <b>Andor’s</b> commitment to shooting on location and using practical sets, with CGI as enhancement, creates a grounded, breathtakingly authentic visual experience. When blending CGI and practical effects you can get this amazing quality, which requires an open mind and clear directive and narritive forsight.</p></div>
-      </div>
-    
-      <div class="text-image-container">
-        <img src="images/hollywood-legacy.jpg" alt="Hollywood Legacy" class="image-container">
-        <div class="text-content">
-          <h2>A Lasting Impact</h2>
-          <p>Beyond Star Wars, Tony Gilroy remains a respected Hollywood figure, known for thought-provoking and layered stories. His narritive and directive foresight is imparitive for the direction he gives to each of his shows and his steadfast approach to creating some of the best cinima to ever grace our screens.</p>
-        </div>
-      </div>
-    </section>
-    
+    </div>
+
   </main>
+  
+  <footer style="background-color: #333; color: white; text-align: center; padding: 10px; margin-top: 20px;">
+    <p>&copy; 2024 Star Wars Andor Fan Site</p>
+    <a href="#top" style="color: #ff9900; text-decoration: none;">Back to Top</a>
+  </footer>
+
 </body>
 </html>
